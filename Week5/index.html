@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create product list with CSS3</title>
+<style type="text/css">
+.ProductDetails {display: none;}
+.Product img {
+    width: 150px;
+    heigh: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #aaa;
+}
+.ProductName {font-weight: bold;}
+.ProductStudentCode {font-style: italic;}
+.ProductPrice:before {content: " - ";}
+.Product {
+    text-align: center;
+    width: 150px;
+    margin: 0px 20px;
+    float: left;
+    cursor: pointer;
+}
+.Product:hover .ProductDetails {display: block;}
+</style>
+</head>
+<body>
+<div>
+    <div class="Product">
+         <img src="img/rose.jpg" />
+         <div class="ProductDetails">
+              <span class="ProductName">TrinhHongLien</span>
+              <span class="ProductStudentCode">23070250</span>
+            </div>
+        </div>
+        <div class="Product">
+             <img src="img/tulip.jpg" />
+             <div class="ProductDetails">
+                <span class="ProductName">VuThiAnhTho</span>
+                <span class="ProductStudentCode">23070082</span>
+            </div>
+            <div class="Product">
+                <img src="img/daisy.jpg" />
+                <div class="ProductDetails">
+                    <span class="ProductName">NguyenThiHienDung</span>
+                    <span class=ProductStudentCode">23070232</span>
+                </div>
+</div>
+</body>
+</html>
