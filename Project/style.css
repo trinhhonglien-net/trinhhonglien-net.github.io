@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ @media screen and (max-width:1332px) {
+     .logoo{
+         display: none;
+     }
+ }
+ .container{
+     border-bottom: 1px solid black;
+ }
+ .logoo {
+     color: #1e1e24;
+     margin-left: -20rem;
+     font-size: 1.2rem;
+     font-weight: 600;
+     text-decoration: none;
+ }
+ .parent-link {
+     font-size: 1rem;
+     margin-left: -10rem;
+ }
+
+ .parent-link, .icon {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .social-links {
+     text-decoration: none;
+     padding: 0 2.5rem;
+     margin: 0;
+     color: #1e1e24;
+     font-weight: 500;
+     transition: all 0.6s;
+ }
+
+ .social-links:hover {
+     opacity: 0.8;
+     scale: 1.05;
+     transform: translateY(-5px);
+ }
+ .logo {
+     height: 48px;
+     border-radius: 50px;
+ }
+
+ .logo:hover {
+     opacity: 0.7;
+ }
+
+ .sm-icon {
+     padding: 0 0.5rem;
+     margin: 0px 0.5rem;
+     font-size: 24px;
+     color: rgb(35, 35 , 35);
+     transition: all 0.6s;
+ }
+
+ .sm-icon:hover {
+     opacity: 0.8;
+     scale: 1.2;
+     transform: rotate3d(0, 0, 1, 30deg);
+     color: rgb(15, 183, 238);
+ }
+ nav {
+     font-size: 20px;
+     font-weight: 700;
+     display: flex;
+     justify-content: space-between;
+     padding: 1.5rem 1rem;
+ }
+ .home {
+     width: 100%;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     padding: 2rem 5rem 0 18rem;
+     margin: -5rem 0rem 0rem -5rem;
+     gap: 1rem;
+ }
+ .home-img img {
+     width: 100%;
+     height: auto;
+     max-height: 500px;
+     object-fit: cover;
+     border-radius: 20px;
+     animation: profile-animation 8s ease-in-out infinite;
+ }
+ @keyframes profile-animation {
+     0%{
+         border-radius: 50% 40% 30% 70% / 60% 30% 70% 40% ;
+     }
+     50%{
+         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60% ;
+     }
+     100%{
+         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% ;
+     }
+     } 
+ .home-text h2 {
+     font-size: 3rem;
+     margin-bottom: 1rem;
+ }
+ .home-text h3 {
+     position: relative;
+     padding-left: 6rem;
+     font-weight: 500;
+     margin-bottom: 1rem;
+ }
+ .home-text h3::before {
+     content: "";
+     position: absolute;
+     width: 80px;
+     height: 2px;
+     background-color: #1e1e24;
+     left: 0;
+     top: 1rem;
+ }
+ .home-text p {
+     margin-bottom: 2rem;
+ }
+ .btn {
+     display: inline-block;
+     width: fit-content;
+     padding: 1rem;
+     margin-top: 3rem;
+     border-radius: 0.5rem;
+     cursor: pointer;
+     color: #f7f7f2;
+     border: 1px solid #1e1e24;
+     font-weight: 500;
+     font-size: 12px;
+     text-align: center;
+     background: #1e1e24;
+     transition: all 0.5s;
+     text-decoration: none;
+ }
+ .btn:hover {
+     background: #f7f7f2;
+     color: #1e1e24;
+     transform: translateY(5px);
+ }
+ .about{
+     background-color: #CDC4BB;
+     padding: 365px 50%;
+     position: relative;
+ }
+ .about .prof {
+     position: absolute;
+     top: 100px;
+     margin-left: -10rem;
+ }
+ .about .prof h1{
+     display: inline;
+     text-transform: uppercase;
+     font-family: "Roboto", sans-serif;
+     font-weight: 700;
+     font-style: normal;
+     letter-spacing: 0.3rem;
+     margin-right: 13px;
+ }
+ .about .image img{
+     position: absolute;
+     width: 400px;
+     height: 500px;
+     object-fit: cover;
+     border-radius: 200px;
+     left: 15rem;
+     top: 10rem;
+     mix-blend-mode: luminosity;
+ }
+ .about .image img:hover{
+     animation: prof-animation 8s ease-in-out infinite;
+     mix-blend-mode: normal;
+ }
+ @keyframes prof-animation {
+     0%{
+         border-radius: 50% 40% 30% 70% / 60% 30% 70% 40% ;
+     }
+     50%{
+         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60% ;
+     }
+     100%{
+         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% ;
+     }
+     } 
+ .loader {
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 790px;
+     margin-bottom: 10px;
+     padding: 15px;
+     background-color: #F7F7F2;
+     overflow: hidden;
+ }
+
+ .loader:after {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background: linear-gradient(110deg, rgba(227, 227, 227, 0) 0%, rgba(227, 227, 227, 0) 40%, rgba(227, 227, 227, 0.5) 50%, rgba(227, 227, 227, 0) 60%, rgba(227, 227, 227, 0) 100%);
+     animation: gradient-animation_2 5s linear infinite;
+ }
+ @keyframes gradient-animation_2 {
+     0% {
+         transform: translateX(-100%);
+     }
+
+     100% {
+         transform: translateX(100%);
+     }
+ }
+ .about .inf {
+     position: absolute;
+     margin-top: -5rem;
+     font-size: 20px;
+ }
+ .about .inf h3{
+     display: inline-block;
+     font-family: "Roboto", sans-serif;
+     font-weight: 700;
+     font-style: normal;
+     margin-bottom: 20px;
+     letter-spacing: 2px;
+     transition: 0.5s;
+ }
+ .about .inf p{
+     display: inline-block;
+     font-family: "Roboto", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     margin-left: 10px;
+     letter-spacing: 2px;
+ }
+ .about .inf h3:hover{
+     scale: 1.1;
+     margin-right: 60px;
+     margin-left: -5px;
+     color: #6F71D3;
+     cursor: pointer;
+ }
+ .edit-profile {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: #6F71D3;
+     color: #fff;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     display: none;
+     transition: all 0.6s;
+     animation: edit-profile 8s ease-in-out infinite;
+ }
+ .edit-profile:hover{
+     scale: 1.1;
+     background-color: #F7F7F2;
+     color: #6F71D3;
+     border: 1px solid #6F71D3;
+ }
+ @keyframes edit-profile {
+     0%{
+         transform: translateX(-10%);
+     }
+     50%{
+         transform: translateX(10%);
+     }
+     100%{
+         transform: translateX(-10%);
+     }
+ } 
